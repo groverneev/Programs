@@ -10,10 +10,32 @@
         "-g",
         "${file}",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "${fileDirname}\\${fileBasenameNoExtension}"
       ],
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/c"]
+        }
+      },
+      "group": {
+        "kind": "build"
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build and run cpp",
+      "type": "shell",
+      "command": "g++ -std=c++17 -g \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}\" && \"${fileDirname}\\${fileBasenameNoExtension}\"",
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/c"]
+        }
+      },
       "group": {
         "kind": "build",
+        "isDefault": true
       },
       "problemMatcher": ["$gcc"]
     }
