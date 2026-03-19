@@ -11,3 +11,4 @@
 .idea
 *.dSYM
 *.exe
+.vscode/
