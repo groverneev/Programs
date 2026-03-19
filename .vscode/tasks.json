@@ -2,28 +2,6 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build cpp by kabir",
-      "type": "shell",
-      "command": "g++",
-      "args": [
-        "-std=c++17",
-        "-g",
-        "${file}",
-        "-o",
-        "${fileDirname}\\${fileBasenameNoExtension}"
-      ],
-      "options": {
-        "shell": {
-          "executable": "cmd.exe",
-          "args": ["/c"]
-        }
-      },
-      "group": {
-        "kind": "build"
-      },
-      "problemMatcher": ["$gcc"]
-    },
-    {
       "label": "build and run cpp",
       "type": "shell",
       "command": "g++ -std=c++17 -g \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}\" && \"${fileDirname}\\${fileBasenameNoExtension}\"",

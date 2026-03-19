@@ -2,20 +2,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run C++ by Kabir",
+      "name": "Debug C++",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
-      "args": [],
-      "stopAtEntry": false,
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
       "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "lldb",
-      "preLaunchTask": "build cpp by kabir",
-      "logging": {
-        "moduleLoad": false
-      }
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe",
+      "preLaunchTask": "build and run cpp",
+      "stopAtEntry": false
     }
   ]
 }

@@ -12,7 +12,7 @@ int main() {
 
     cout << 1.234 << "\n";
     cout << 4 << "Temp\n";
-    int x = 0;
+    int x {};
     cout << x;
     return 0;
 }
